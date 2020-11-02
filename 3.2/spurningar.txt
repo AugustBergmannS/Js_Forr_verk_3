@@ -2,4 +2,4 @@ Spurningar fyrir 3.2 Dom og Events
 
 1. Not Live eða "Static" Nodelist eru eins og querySelectorAll() það uppfærir sig ekki sjálft, en Live Nodelist eins og getElementsByClassName() uppfærir sig sjálft og þarf þessi ekki að vera kallað aftur.
 
-2.
+2. False er bubbling og ef það er <p> inn í <div> þá gerist "Click" event-ið á <p> first því það er innst en True er capturing og gerir akkurat öfugt við bubbling þá fer <div> first
