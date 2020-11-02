@@ -1,7 +1,10 @@
-﻿let Person = {  
+let Person = {  
   name: 'Sam',  
   sayName: function(){    
-     console.log('My name is '+ this.name);  
+     return 'My name is '+ this.name;  
   }
 };
-buttonEl.addEventListener('click', Person.sayName);
+const pp = Person.sayName;
+const bb = pp.bind(Person);
+buttonEl.addEventListener('click', bb);
+console.log(bb());
